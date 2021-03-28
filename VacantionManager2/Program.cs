@@ -23,6 +23,6 @@ namespace VacantionManager2
                     webBuilder.UseStartup<Startup>();
                 });
 
-        // test line
+        //test line
     }
 }
