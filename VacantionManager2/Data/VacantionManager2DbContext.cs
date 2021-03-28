@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace VacantionManager2.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class VacantionManager2DbContext : IdentityDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public VacantionManager2DbContext(DbContextOptions<VacantionManager2DbContext> options)
             : base(options)
         {
         }

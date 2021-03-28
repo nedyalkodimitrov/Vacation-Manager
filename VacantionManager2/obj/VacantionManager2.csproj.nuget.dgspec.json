@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Develpment\\C#\\VacantionManager2\\VacantionManager2\\VacantionManager2.csproj": {}
+    "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VacantionManager2\\VacantionManager2.csproj": {}
   },
   "projects": {
-    "D:\\Develpment\\C#\\VacantionManager2\\VacantionManager2\\VacantionManager2.csproj": {
+    "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VacantionManager2\\VacantionManager2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Develpment\\C#\\VacantionManager2\\VacantionManager2\\VacantionManager2.csproj",
+        "projectUniqueName": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VacantionManager2\\VacantionManager2.csproj",
         "projectName": "VacantionManager2",
-        "projectPath": "D:\\Develpment\\C#\\VacantionManager2\\VacantionManager2\\VacantionManager2.csproj",
-        "packagesPath": "C:\\Users\\svetoslav\\.nuget\\packages\\",
-        "outputPath": "D:\\Develpment\\C#\\VacantionManager2\\VacantionManager2\\obj\\",
+        "projectPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VacantionManager2\\VacantionManager2.csproj",
+        "packagesPath": "C:\\Users\\Диан\\.nuget\\packages\\",
+        "outputPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VacantionManager2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\svetoslav\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Диан\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -31,6 +30,7 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
+            "targetAlias": "netcoreapp3.0",
             "projectReferences": {}
           }
         },
@@ -42,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "targetAlias": "netcoreapp3.0",
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
@@ -76,10 +77,6 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[3.0.3, 3.0.3]"
             }
@@ -92,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
