@@ -40,33 +40,21 @@ namespace ConsoleApp3.Models
             {
                 entity.Property(e => e.Id).ValueGeneratedNever();
 
-                entity.Property(e => e.Description)
-                    .IsRequired()
-                    .IsUnicode(false);
+                entity.Property(e => e.Description).IsUnicode(false);
 
-                entity.Property(e => e.Name)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                entity.Property(e => e.Name).IsUnicode(false);
             });
 
             modelBuilder.Entity<Role>(entity =>
             {
-                entity.Property(e => e.Role1)
-                    .IsRequired()
-                    .HasMaxLength(15)
-                    .IsUnicode(false)
-                    .HasColumnName("Role");
+                entity.Property(e => e.Role1).IsUnicode(false);
             });
 
             modelBuilder.Entity<Team>(entity =>
             {
                 entity.Property(e => e.Id).ValueGeneratedNever();
 
-                entity.Property(e => e.Name)
-                    .IsRequired()
-                    .HasMaxLength(30)
-                    .IsUnicode(false);
+                entity.Property(e => e.Name).IsUnicode(false);
 
                 entity.HasOne(d => d.Project)
                     .WithMany(p => p.Teams)
@@ -81,29 +69,15 @@ namespace ConsoleApp3.Models
 
             modelBuilder.Entity<User>(entity =>
             {
-                entity.ToTable("User");
-
                 entity.Property(e => e.Id).ValueGeneratedNever();
 
-                entity.Property(e => e.Name)
-                    .IsRequired()
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
+                entity.Property(e => e.Name).IsUnicode(false);
 
-                entity.Property(e => e.Password)
-                    .IsRequired()
-                    .HasMaxLength(25)
-                    .IsUnicode(false);
+                entity.Property(e => e.Password).IsUnicode(false);
 
-                entity.Property(e => e.Surname)
-                    .IsRequired()
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
+                entity.Property(e => e.Surname).IsUnicode(false);
 
-                entity.Property(e => e.Username)
-                    .IsRequired()
-                    .HasMaxLength(60)
-                    .IsUnicode(false);
+                entity.Property(e => e.Username).IsUnicode(false);
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.Users)
@@ -119,19 +93,9 @@ namespace ConsoleApp3.Models
 
             modelBuilder.Entity<Vacation>(entity =>
             {
-                entity.ToTable("Vacation");
-
                 entity.Property(e => e.Id).ValueGeneratedNever();
 
-                entity.Property(e => e.DateFrom).HasColumnType("datetime");
-
-                entity.Property(e => e.DateTo).HasColumnType("datetime");
-
-                entity.Property(e => e.QueryCreation).HasColumnType("datetime");
-
-                entity.Property(e => e.ReasonForAbsence)
-                    .IsRequired()
-                    .IsUnicode(false);
+                entity.Property(e => e.ReasonForAbsence).IsUnicode(false);
 
                 entity.HasOne(d => d.ApplicantNavigation)
                     .WithMany(p => p.Vacations)
