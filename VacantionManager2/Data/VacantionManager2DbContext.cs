@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using VacantionManager2.Models;
 
 namespace VacantionManager2.Data
 {
@@ -12,5 +13,7 @@ namespace VacantionManager2.Data
             : base(options)
         {
         }
+        public DbSet<VacantionManager2.Models.User> User { get; set; }
+
     }
 }
