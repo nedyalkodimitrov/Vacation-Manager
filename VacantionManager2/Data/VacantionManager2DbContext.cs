@@ -13,7 +13,7 @@ namespace VacantionManager2.Data
             : base(options)
         {
         }
-        public DbSet<VacantionManager2.Models.User> User { get; set; }
+        public DbSet<VacantionManager2.Models.UserApplication> User { get; set; }
 
     }
 }
