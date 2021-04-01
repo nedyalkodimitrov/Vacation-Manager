@@ -8431,11 +8431,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VacantionManager2\\VacantionManager2.csproj",
+      "projectUniqueName": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\ccccc\\Vacation-Manager-kadir\\VacantionManager2\\VacantionManager2.csproj",
       "projectName": "VacantionManager2",
-      "projectPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VacantionManager2\\VacantionManager2.csproj",
+      "projectPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\ccccc\\Vacation-Manager-kadir\\VacantionManager2\\VacantionManager2.csproj",
       "packagesPath": "C:\\Users\\Диан\\.nuget\\packages\\",
-      "outputPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VacantionManager2\\obj\\",
+      "outputPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\ccccc\\Vacation-Manager-kadir\\VacantionManager2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
