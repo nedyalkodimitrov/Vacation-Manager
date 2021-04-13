@@ -9313,11 +9313,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\VManager\\VManager\\VManager.csproj",
+      "projectUniqueName": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VManager\\VManager.csproj",
       "projectName": "VManager",
-      "projectPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\VManager\\VManager\\VManager.csproj",
+      "projectPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VManager\\VManager.csproj",
       "packagesPath": "C:\\Users\\Диан\\.nuget\\packages\\",
-      "outputPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\VManager\\VManager\\obj\\",
+      "outputPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

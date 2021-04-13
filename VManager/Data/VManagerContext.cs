@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using VManager.Models;
+using VManager.ViewModels.Project;
 
 namespace VManager.Data
 {
@@ -14,6 +15,8 @@ namespace VManager.Data
         public virtual DbSet<Team> Teams { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Vacation> Vacations { get; set; }
+
+        
         public VManagerContext(DbContextOptions<VManagerContext> options)
             : base(options)
         {
@@ -24,5 +27,6 @@ namespace VManager.Data
             optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=VManager;Trusted_Connection=True;MultipleActiveResultSets=true");
             optionsBuilder.UseLazyLoadingProxies();
         }
+        public DbSet<VManager.ViewModels.Project.ListOfProjectsViewModel> ListOfProjectsViewModel { get; set; }
     }
 }

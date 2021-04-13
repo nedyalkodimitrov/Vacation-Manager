@@ -1,0 +1,21 @@
+﻿<nav aria-label="Page navigation example">
+    <ul class="pagegenerator justify-content-center">
+        <li class="page-item"><a class="page-link" @onclick="async () => await this.GoTo(0)">First</a></li>
+        @for (var i = 0; i < this.Pages; i++)
+        {
+            var currentIndex = i;
+            <li class="page-item"><a class="page-link" @onclick="async () => await this.GoTo(currentIndex)">@(currentIndex + 1)</a></li>
+        }
+        <li class="page-item"><a class="page-link" @onclick="async () => await this.GoTo(this.Pages - 1)">Last</a></li>
+    </ul>
+</nav>
+
+
+
+@code {
+    [Parameter]
+    public int Pages { get; set; }
+
+    [Parameter]
+    public Func<int, Task> GoTo { get; set; }
+}

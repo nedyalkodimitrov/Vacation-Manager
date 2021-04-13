@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using VManager.Data;
 using VManager.Models;
+using VManager.Data;
 
 namespace VManager.Controllers
 {
@@ -59,7 +59,7 @@ namespace VManager.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Username,Password,FirstName,Surname,RoleId,TeamId")] User user)
+        public async Task<IActionResult> Create([Bind("Id,Username,Password,FirstName,Surname,RoleId,TeamId,IsLeader")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +95,7 @@ namespace VManager.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Username,Password,FirstName,Surname,RoleId,TeamId")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Username,Password,FirstName,Surname,RoleId,TeamId,IsLeader")] User user)
         {
             if (id != user.Id)
             {

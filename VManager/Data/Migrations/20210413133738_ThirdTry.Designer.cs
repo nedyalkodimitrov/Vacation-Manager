@@ -10,7 +10,7 @@ using VManager.Data;
 namespace VManager.Data.Migrations
 {
     [DbContext(typeof(VManagerContext))]
-    [Migration("20210411171356_ThirdTry")]
+    [Migration("20210413133738_ThirdTry")]
     partial class ThirdTry
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,6 +46,9 @@ namespace VManager.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<bool>("IsInSystem")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -60,9 +63,6 @@ namespace VManager.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("LeaderId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -86,6 +86,9 @@ namespace VManager.Data.Migrations
 
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsLeader")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
@@ -121,9 +124,6 @@ namespace VManager.Data.Migrations
                     b.Property<int>("ApplicantId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("Approved")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime>("DateFrom")
                         .HasColumnType("datetime2");
 
@@ -133,11 +133,14 @@ namespace VManager.Data.Migrations
                     b.Property<bool>("HalfDayVacation")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("QueryCreationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ReasonForAbsence")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Type")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

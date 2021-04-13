@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using VManager.Data;
 using VManager.Models;
+using VManager.Data;
 
 namespace VManager.Controllers
 {

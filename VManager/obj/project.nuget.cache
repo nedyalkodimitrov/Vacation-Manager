@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GBt4xpRHjmKbDkP0YxLASzTUmqGPxXXehiYRtVwwQilH70W6SJ48y1IFWpPz4+5BgvirQft14690Qb7eSQ/m5Q==",
+  "dgSpecHash": "sI0qbHUsBj5D8GR70WxJHNNgqcHmIQDzgQBuzPuxc80LixEY4ON3smlNdG5ayGctmVtfA+Ol6bAf55CTYyR3Qg==",
   "success": true,
-  "projectFilePath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\VManager\\VManager\\VManager.csproj",
+  "projectFilePath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VManager\\VManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Диан\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Диан\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
