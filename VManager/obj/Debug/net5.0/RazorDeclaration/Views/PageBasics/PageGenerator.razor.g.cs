@@ -20,7 +20,7 @@ namespace VManager.Views.PageBasics
         }
         #pragma warning restore 1998
 #nullable restore
-#line 15 "D:\monka\СИ2021-Русе\01-course-introduction\Vacation-Manager\VManager\Views\PageBasics\PageGenerator.razor"
+#line 15 "D:\monka\СИ2021-Русе\Vacation-Manager\VManager\Views\PageBasics\PageGenerator.razor"
        
     [Parameter]
     public int Pages { get; set; }

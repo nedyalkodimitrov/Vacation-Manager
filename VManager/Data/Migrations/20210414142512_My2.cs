@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace VManager.Data.Migrations
+namespace VManager.Migrations
 {
-    public partial class ThirdTry : Migration
+    public partial class My2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
