@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VManager\\VManager.csproj": {}
+    "D:\\Develpment\\Vacation-Manager\\VManager\\VManager.csproj": {}
   },
   "projects": {
-    "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VManager\\VManager.csproj": {
+    "D:\\Develpment\\Vacation-Manager\\VManager\\VManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VManager\\VManager.csproj",
+        "projectUniqueName": "D:\\Develpment\\Vacation-Manager\\VManager\\VManager.csproj",
         "projectName": "VManager",
-        "projectPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VManager\\VManager.csproj",
-        "packagesPath": "C:\\Users\\Диан\\.nuget\\packages\\",
-        "outputPath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VManager\\obj\\",
+        "projectPath": "D:\\Develpment\\Vacation-Manager\\VManager\\VManager.csproj",
+        "packagesPath": "C:\\Users\\svetoslav\\.nuget\\packages\\",
+        "outputPath": "D:\\Develpment\\Vacation-Manager\\VManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Диан\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\svetoslav\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -44,6 +47,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.4, )"
@@ -68,9 +75,25 @@
               "target": "Package",
               "version": "[5.0.4, )"
             },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "MySql.Data.Entity": {
+              "target": "Package",
+              "version": "[6.10.9, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
             }
           },
           "imports": [

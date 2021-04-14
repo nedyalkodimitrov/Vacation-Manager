@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Team Lead | Vacations";
+    Layout = "_TeamLeadLayout";
+}
+
+<h2>Vacation Page</h2>
+<form action="/action_page.php">
+    <label for="fromDate">Date From:</label><br>
+    <input type="date" id="fromDate" name="fname" value="From Date"><br>
+    <label for="toDate">Date To:</label><br>
+    <input type="date" id="toDate" name="lname" value="To Date"><br><br>
+    <label for="half-day">Date To:</label><br>
+    <input type="checkbox" id="half-day" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+<h2>  Team vacations</h2>
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Date From
+            </th>
+            <th>
+                Date To
+            </th>
+            <th>
+                Half Day
+            </th>
+            <th>
+                Approved
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in ViewBag.Users)
+        {
+            @foreach (var vacation in user.Vacations)
+            {
+                <tr>
+                    <td>
+                        @vacation.DateFrom
+                    </td>
+                    <td>
+                        @vacation.DateTo
+                    </td>
+                    <td>
+                        @vacation.HalfDayVacation
+                    </td>
+                    <td>
+                        @vacation.IsApproved
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>*@
+<hr />
+<h2>Your vacations</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Date From
+            </th>
+            <th>
+                Date To
+            </th>
+            <th>
+                Half Day
+            </th>
+            <th>
+                Approved
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.DateFrom
+                </td>
+                <td>
+                    @item.DateTo
+                </td>
+                <td>
+                    @item.HalfDayVacation
+                </td>
+                <td>
+                    @item.IsApproved
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

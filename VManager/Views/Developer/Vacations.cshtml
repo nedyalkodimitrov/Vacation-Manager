@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Team";
+    Layout = "_DeveloperLayout";
+}
+
+<h2>Vacation Page</h2>
+<form action="/action_page.php">
+    <label for="fromDate">Date From:</label><br>
+    <input type="date" id="fromDate" name="fname" value="From Date"><br>
+    <label for="toDate">Date To:</label><br>
+    <input type="date" id="toDate" name="lname" value="To Date"><br><br>
+    <label for="half-day">Date To:</label><br>
+    <input type="checkbox" id="half-day" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form> 
+
+<hr>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Date From
+            </th>
+            <th>
+              Date To
+            </th>
+            <th>
+              Half Day 
+            </th>
+            <th>
+               Approved
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.DateFrom
+                </td>
+                <td>
+                    @item.DateTo
+                </td>
+                <td>
+                    @item.HalfDayVacation
+                </td>
+                <td>
+                    @item.IsApproved
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

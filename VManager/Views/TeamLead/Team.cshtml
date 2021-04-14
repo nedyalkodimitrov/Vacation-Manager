@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "TeamLead | Team ";
+    Layout = "_TeamLeadLayout";
+}
+
+<h1>Team Name - @ViewBag.Team.Name</h1>
+
+
+@foreach (var item in Model)
+{
+    if (item.IsLeader)
+    {
+        <h2>Team Leader: @item.FirstName @item.Surname  </h2>
+    }
+}
+<h2>
+    Project Name:  @ViewBag.Team.Project.Name
+</h2>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <h3>Developers List</h3>
+        <td>
+            @item.FirstName @item.Surname
+        </td>
+
+
+    </tr>
+}
+
+<hr />
+
+<h2>Add Developer</h2>
+<select name="developers" id="developers">
+    @foreach (var item in Model)
+    {
+        <option value="@item.Id">@item.FirstName @item.Surname</option>
+
+    }
+
+
+</select>
+
+<hr />
+
+<h2>Remove Developer</h2>
+<select name="developers" id="developers">
+    @foreach (var item in Model)
+    {
+        <option value="@item.Id">@item.FirstName @item.Surname</option>
+
+    }
+
+
+</select>

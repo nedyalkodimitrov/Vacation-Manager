@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Developer | Home";
+    Layout = "_DeveloperLayout";
+}
+
+
+@foreach (var item in Model)
+{
+    <tr>
+        <h3>Developers List</h3>
+        <td>
+            @item.FirstName @item.Surname
+        </td>
+
+
+    </tr>
+}

@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using VManager.Models;
 using VManager.Data;
+using VManager.Models;
 
 namespace VManager.Controllers
 {
@@ -22,7 +22,7 @@ namespace VManager.Controllers
         // GET: Users
         public async Task<IActionResult> Index()
         {
-            var vManagerContext = _context.Users.Include(u => u.Role).Include(u => u.Team);
+            var vManagerContext = _context.AppUsers.Include(u => u.Team);
             return View(await vManagerContext.ToListAsync());
         }
 
@@ -34,8 +34,7 @@ namespace VManager.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users
-                .Include(u => u.Role)
+            var user = await _context.AppUsers
                 .Include(u => u.Team)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (user == null)
@@ -49,7 +48,6 @@ namespace VManager.Controllers
         // GET: Users/Create
         public IActionResult Create()
         {
-            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Id");
             ViewData["TeamId"] = new SelectList(_context.Teams, "Id", "Id");
             return View();
         }
@@ -59,7 +57,7 @@ namespace VManager.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Username,Password,FirstName,Surname,RoleId,TeamId,IsLeader")] User user)
+        public async Task<IActionResult> Create([Bind("Id,AspUser,FirstName,Surname,TeamId,IsLeader")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -67,7 +65,6 @@ namespace VManager.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Id", user.RoleId);
             ViewData["TeamId"] = new SelectList(_context.Teams, "Id", "Id", user.TeamId);
             return View(user);
         }
@@ -80,12 +77,11 @@ namespace VManager.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users.FindAsync(id);
+            var user = await _context.AppUsers.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
             }
-            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Id", user.RoleId);
             ViewData["TeamId"] = new SelectList(_context.Teams, "Id", "Id", user.TeamId);
             return View(user);
         }
@@ -95,7 +91,7 @@ namespace VManager.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Username,Password,FirstName,Surname,RoleId,TeamId,IsLeader")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,AspUser,FirstName,Surname,TeamId,IsLeader")] User user)
         {
             if (id != user.Id)
             {
@@ -122,7 +118,6 @@ namespace VManager.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Id", user.RoleId);
             ViewData["TeamId"] = new SelectList(_context.Teams, "Id", "Id", user.TeamId);
             return View(user);
         }
@@ -135,8 +130,7 @@ namespace VManager.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users
-                .Include(u => u.Role)
+            var user = await _context.AppUsers
                 .Include(u => u.Team)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (user == null)
@@ -152,15 +146,15 @@ namespace VManager.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var user = await _context.Users.FindAsync(id);
-            _context.Users.Remove(user);
+            var user = await _context.AppUsers.FindAsync(id);
+            _context.AppUsers.Remove(user);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UserExists(int id)
         {
-            return _context.Users.Any(e => e.Id == id);
+            return _context.AppUsers.Any(e => e.Id == id);
         }
     }
 }

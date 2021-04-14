@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -17,10 +18,25 @@ namespace VManager.Controllers
         {
             _logger = logger;
         }
-
+       
         public IActionResult Index()
         {
+             
+           
+            if (User.IsInRole("Developer"))
+            {
+                return Redirect("developer/");
+            }
+            if (User.IsInRole("TeamLead"))
+            {
+                return Redirect("teamLead/");
+            }
+            if (User.IsInRole(""))
+            {
+                return Redirect("teamLead/");
+            }
             return View();
+
         }
 
         public IActionResult Privacy()
