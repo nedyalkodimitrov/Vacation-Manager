@@ -374,7 +374,6 @@ D:\monka\СИ2021-Русе\01-course-introduction\Vacation-Manager\VManager\obj\
 D:\monka\СИ2021-Русе\01-course-introduction\Vacation-Manager\VManager\obj\Debug\net5.0\VManager.RazorComponent.output.cache
 D:\monka\СИ2021-Русе\01-course-introduction\Vacation-Manager\VManager\obj\Debug\net5.0\RazorDeclaration\VManager.dll
 D:\monka\СИ2021-Русе\01-course-introduction\Vacation-Manager\VManager\obj\Debug\net5.0\Razor\Views\PageBasics\PageGenerator.razor.g.cs
-D:\monka\СИ2021-Русе\01-course-introduction\Vacation-Manager\VManager\obj\Debug\net5.0\Razor\Views\Projects\ListOfProjects.cshtml.g.cs
 D:\monka\СИ2021-Русе\Vacation-Manager\VManager\bin\Debug\net5.0\appsettings.Development.json
 D:\monka\СИ2021-Русе\Vacation-Manager\VManager\bin\Debug\net5.0\appsettings.json
 D:\monka\СИ2021-Русе\Vacation-Manager\VManager\bin\Debug\net5.0\VManager.StaticWebAssets.xml
@@ -566,3 +565,7 @@ D:\monka\СИ2021-Русе\Vacation-Manager\VManager\obj\Debug\net5.0\ref\VManag
 D:\monka\СИ2021-Русе\Vacation-Manager\VManager\obj\Debug\net5.0\VManager.pdb
 D:\monka\СИ2021-Русе\Vacation-Manager\VManager\obj\Debug\net5.0\VManager.genruntimeconfig.cache
 D:\monka\СИ2021-Русе\Vacation-Manager\VManager\obj\Debug\net5.0\Razor\Views\Projects\Index.cshtml.g.cs
+D:\monka\СИ2021-Русе\01-course-introduction\Vacation-Manager\VManager\bin\Debug\net5.0\FluentValidation.dll
+D:\monka\СИ2021-Русе\01-course-introduction\Vacation-Manager\VManager\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+D:\monka\СИ2021-Русе\01-course-introduction\Vacation-Manager\VManager\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\monka\СИ2021-Русе\01-course-introduction\Vacation-Manager\VManager\obj\Debug\net5.0\Razor\Views\Projects\Index.cshtml.g.cs

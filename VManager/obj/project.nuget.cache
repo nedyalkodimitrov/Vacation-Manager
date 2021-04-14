@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lLPfT3Ef1U5JpjEKA/Iu7i2NZVU6tvXEOnQeiGGZTSv8tO4q+y9Ozqe+oHAu4uH0FgYFywitRAK8ZuhOgEwWrg==",
+  "dgSpecHash": "nqdN+XWxk3UsiwAbcuYu/NWTMOZsMRXUdYmNtCUfWeYkWMUaNPvUI4HeEvJMgJ7yTcrK12XRvDWNbSgPqhk5eg==",
   "success": true,
-  "projectFilePath": "D:\\monka\\СИ2021-Русе\\Vacation-Manager\\VManager\\VManager.csproj",
+  "projectFilePath": "D:\\monka\\СИ2021-Русе\\01-course-introduction\\Vacation-Manager\\VManager\\VManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Диан\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Диан\\.nuget\\packages\\fluentvalidation\\10.0.2\\fluentvalidation.10.0.2.nupkg.sha512",
