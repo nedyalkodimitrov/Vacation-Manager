@@ -9948,30 +9948,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\svetoslav\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Диан\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Develpment\\Vacation-Manager\\VManager\\VManager.csproj",
+      "projectUniqueName": "D:\\monka\\СИ2021-Русе\\VMNEDSI\\Vacation-Manager\\VManager\\VManager.csproj",
       "projectName": "VManager",
-      "projectPath": "D:\\Develpment\\Vacation-Manager\\VManager\\VManager.csproj",
-      "packagesPath": "C:\\Users\\svetoslav\\.nuget\\packages\\",
-      "outputPath": "D:\\Develpment\\Vacation-Manager\\VManager\\obj\\",
+      "projectPath": "D:\\monka\\СИ2021-Русе\\VMNEDSI\\Vacation-Manager\\VManager\\VManager.csproj",
+      "packagesPath": "C:\\Users\\Диан\\.nuget\\packages\\",
+      "outputPath": "D:\\monka\\СИ2021-Русе\\VMNEDSI\\Vacation-Manager\\VManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\svetoslav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Диан\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
